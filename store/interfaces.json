@@ -1,0 +1,7 @@
+{
+  "parallax-wrapper": {
+    "component": "ParallaxWrapper",
+    "composition": "children",
+    "allowed": "*"
+  }
+}
