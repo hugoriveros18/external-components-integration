@@ -1,0 +1,18 @@
+query getProductInfo ($skuId: ID!) {
+  product(
+    identifier: {
+      field: sku,
+      value: $skuId
+    }
+  ) @context(provider: "vtex.search-graphql") {
+    productName,
+    priceRange {
+      listPrice {
+        highPrice
+      },
+      sellingPrice {
+        highPrice
+      }
+    }
+  }
+}

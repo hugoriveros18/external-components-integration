@@ -1,0 +1,11 @@
+{
+  "parallax-wrapper": {
+    "component": "ParallaxWrapper",
+    "composition": "children",
+    "allowed": "*"
+  },
+  "interactive-products": {
+    "component": "InteractiveProducts",
+    "composition": "children"
+  }
+}

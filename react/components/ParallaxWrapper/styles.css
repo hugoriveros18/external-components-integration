@@ -1,0 +1,33 @@
+.parallaxWrapper__container {
+  position: relative;
+}
+
+.parallaxWrapper__ImageOuttercontainer {
+  position: relative;
+  overflow: hidden;
+}
+
+.parallaxWrapper__ImageInnercontainer {
+  width: 100%;
+  position: relative;
+  transform: scaleY(1.15);
+}
+
+.parallaxWrapper__Image {
+  width: 100%;
+  height: 100%;
+}
+
+.parallaxWrapper__contentContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+@media screen and (max-width: 1360px) {
+  .parallaxWrapper__ImageInnercontainer {
+    transform: scaleY(1.2);
+  }
+}
