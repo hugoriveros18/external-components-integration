@@ -57,9 +57,15 @@ export default function ParallaxWrapper({
 
   //EFFECTS
   useEffect(() => {
+    window.addEventListener('resize', updateScrollValues);
+
+    return () => window.removeEventListener('resize', updateScrollValues);
+  },[])
+
+  useEffect(() => {
     setTimeout(() => {
       updateScrollValues();
-    },1000)
+    },3000)
   },[runtime])
 
   //JSX
@@ -83,7 +89,7 @@ export default function ParallaxWrapper({
       >
         <ScrollParallax
           lerpEase={0.1}
-          strength={0.15}
+          strength={device === 'phone' ? 0.11 : 0.15}
           ref={scrollBackgroundRef}
         >
           <div

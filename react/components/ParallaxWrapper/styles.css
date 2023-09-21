@@ -10,7 +10,7 @@
 .parallaxWrapper__ImageInnercontainer {
   width: 100%;
   position: relative;
-  transform: scaleY(1.1);
+  transform: scaleY(1.15);
 }
 
 .parallaxWrapper__Image {
@@ -26,8 +26,8 @@
   justify-content: flex-start;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1360px) {
   .parallaxWrapper__ImageInnercontainer {
-    transform: scaleY(1.3);
+    transform: scaleY(1.2);
   }
 }
